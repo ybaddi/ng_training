@@ -1,0 +1,33 @@
+<div class="four wide column center aligned likes">
+
+  <div class="ui statistic">
+    <div class="value">
+      {{article.likes}}
+    </div>
+    <div class="label">
+      Likes
+    </div>
+  </div>
+</div>
+<div class="wide column twelve">
+
+  <a class="ui header large">
+  {{article.title}}
+  </a>
+  <div class="meta">
+  {{article.link}}
+  </div>
+<ul class="horizontal list ui big likers">
+  <li class="item">
+    <a href (click)="like()" >
+      <i class="arrow up icon"></i>
+      like</a>
+  </li>
+
+  <li class="item">
+    <a href (click)="dislike()" >dislike
+    <i class="arrow down icon"></i>
+    </a>
+  </li>
+  </ul>
+</div>
